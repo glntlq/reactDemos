@@ -14,7 +14,18 @@ import Greeting from './components/ifElseDemo'
 import LoginControl from './components/ifElseDemo2'
 import LiList from './components/list'
 import NameForm from './components/formDemo'
+import MoreInput from './components/moreInput'
+import Calculator from './components/threeComponents'
+import WelcomeDialog from './components/propsDemo'
+import CustomTextInput from './components/refs'
+import FromDemo from './components/Form'
 class App extends Component {
+  componentDidMount() {
+    this.lalla.eeee();
+    console.log(11)
+  }
+
+
   render() {
     return (
       <div className="App">
@@ -37,6 +48,12 @@ class App extends Component {
         <LoginControl />
         <LiList numbers ={[1,2,3,4]} />
         <NameForm />
+        <MoreInput />
+        <Calculator />
+        <WelcomeDialog />
+        <CustomTextInput
+        ref={input => this.lalla = input}/>
+        <FromDemo />
       </div>
     );
   }
